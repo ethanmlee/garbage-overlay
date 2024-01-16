@@ -2,8 +2,8 @@
 <!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<maintainer type="person">
-		<email>ethan@ethanmlee.com</email>
-		<name>Ethan M. Lee</name>
+		<email>pascal.jaeger@leimstift.de</email>
+		<name>Pascal Jäger</name>
 	</maintainer>
 	<upstream>
 		<remote-id type="github">AdnanHodzic/auto-cpufreq</remote-id>
