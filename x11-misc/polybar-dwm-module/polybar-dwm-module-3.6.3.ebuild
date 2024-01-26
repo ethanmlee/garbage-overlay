@@ -56,8 +56,6 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 
-PATCHES=( "${FILESDIR}/${P}-fix-prefix.patch" )
-
 src_configure() {
 	local mycmakeargs=(
 		-DENABLE_ALSA="$(usex alsa)"
