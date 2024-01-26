@@ -21,7 +21,6 @@ LICENSE="MIT"
 SLOT="0"
 IUSE="alsa curl doc ipc mpd network pulseaudio"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
-#KEYWORDS=""
 
 DEPEND="
 	${PYTHON_DEPS}
@@ -56,7 +55,7 @@ src_configure() {
 		-DENABLE_MPD="$(usex mpd)"
 		-DENABLE_NETWORK="$(usex network)"
 		-DENABLE_PULSEAUDIO="$(usex pulseaudio)"
-		ENABLE_DWM="ON"
+		-DENABLE_DWM="ON"
 	)
 
 	cmake_src_configure
