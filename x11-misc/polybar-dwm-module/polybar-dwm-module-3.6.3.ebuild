@@ -22,7 +22,7 @@ SRC_URI="
 		https://github.com/polybar/i3ipcpp/archive/${I3IPCPP_COMMIT}.tar.gz
 			-> i3ipcpp-${I3IPCPP_COMMIT}.tar.gz )
 "
-S=${WORKDIR}/${PN}-${EGIT_COMMIT}
+S=${WORKDIR}/polybar-dwm-${EGIT_COMMIT}
 
 LICENSE="MIT"
 SLOT="0"
