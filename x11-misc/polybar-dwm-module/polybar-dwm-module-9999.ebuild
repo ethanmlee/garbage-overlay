@@ -8,9 +8,8 @@ PYTHON_COMPAT=( python3_{9..12} )
 inherit git-r3 cmake python-single-r1
 
 DESCRIPTION="polybar-dwm-module is a fork of polybar which implements a dwm module."
-HOMEPAGE="https://github.com/mihirlad55/polybar-dwm-module"
+HOMEPAGE="https://github.com/pgrondek/polybar-dwm-module"
 
-#EGIT_REPO_URI="https://github.com/mihirlad55/polybar-dwm-module.git"
 EGIT_REPO_URI="https://github.com/pgrondek/polybar-dwm.git"
 EGIT_SUBMODULES=(
 	lib/dwmipcpp
@@ -22,7 +21,7 @@ LICENSE="MIT"
 SLOT="0"
 IUSE="alsa curl doc ipc mpd network pulseaudio"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
-KEYWORDS=""
+#KEYWORDS=""
 
 DEPEND="
 	${PYTHON_DEPS}

@@ -9,6 +9,7 @@
         <remote-id type="github">mihirlad55/polybar-dwm-module</remote-id>
     </upstream>
     <use>
+        <flag name="i3wm">Enable inter-process communication support</flag>
         <flag name="ipc">Enable inter-process communication support</flag>
         <flag name="mpd">Enable Music Player Daemon support</flag>
         <flag name="network">Enable special network features</flag>
