@@ -11,19 +11,18 @@ EGIT_COMMIT="a325d7e0656c7de1d2af0437785e8d433b23d3fc"
 XPP_COMMIT="044e69d05db7f89339bda1ccd1efe0263b01c8f6"
 DWMIPCPP_COMMIT="6b6947fd63845c8239f0a895be695bf206eaae6d"
 I3IPCPP_COMMIT="cb008b30fc5f3febfe467884cb0211ee3c16386b"
-S=${WORKDIR}/polybar-dwm-${EGIT_COMMIT}
 SRC_URI="
 	https://github.com/pgrondek/polybar-dwm/archive/${EGIT_COMMIT}.tar.gz
-		-> ${P}.tar.gz
+		-> ${PN}.tar.gz
 	https://github.com/polybar/xpp/archive/${XPP_COMMIT}.tar.gz
-		-> ${S}/lib/xpp.tar.gz
+		-> xpp-${XPP_COMMIT}.tar.gz
 	https://github.com/mihirlad55/dwmipcpp/archive/${DWMIPCPP_COMMIT}.tar.gz
-		-> ${S}/lib/dwmipcpp.tar.gz
+		-> dwmipcpp-${DWMIPCPP_COMMIT}.tar.gz
 	i3wm? (
 		https://github.com/polybar/i3ipcpp/archive/${I3IPCPP_COMMIT}.tar.gz
-			-> $/lib/i3ipcpp.tar.gz
-	)
+			-> i3ipcpp-${I3IPCPP_COMMIT}.tar.gz )
 "
+S=${WORKDIR}/${PN}-${EGIT_COMMIT}
 
 LICENSE="MIT"
 SLOT="0"
@@ -57,6 +56,17 @@ DEPEND="
 	x11-libs/xcb-util
 "
 RDEPEND="${DEPEND}"
+
+src_prepare() {
+	rmdir lib/xpp || die
+	mv "${WORKDIR}/xpp-${XPP_COMMIT}" lib/xpp || die
+	rmdir lib/dwmipcpp || die
+	mv "${WORKDIR}/dwmipcpp-${DWMIPCPP_COMMIT}" lib/dwmipcpp || die
+	if use i3wm; then
+		rmdir lib/xpp || die
+		mv "${WORKDIR}/i3ipcpp-${I3IPCPP_COMMIT}" lib/cpp || die
+	fi
+}
 
 src_configure() {
 	local mycmakeargs=(
