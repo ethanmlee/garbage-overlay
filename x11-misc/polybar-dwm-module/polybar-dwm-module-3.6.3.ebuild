@@ -21,10 +21,9 @@ SRC_URI="
 		-> ${S}/lib/dwmipcpp.tar.gz
 	i3wm? (
 		https://github.com/polybar/i3ipcpp/archive/${I3IPCPP_COMMIT}.tar.gz
-			-> ${S}/lib/i3ipcpp.tar.gz
+			-> $/lib/i3ipcpp.tar.gz
 	)
 "
-S=${WORKDIR}/polybar-dwm-${EGIT_COMMIT}
 
 LICENSE="MIT"
 SLOT="0"
