@@ -16,12 +16,12 @@ SRC_URI="
 	https://github.com/pgrondek/polybar-dwm/archive/${EGIT_COMMIT}.tar.gz
 		-> ${P}.tar.gz
 	https://github.com/polybar/xpp/archive/${XPP_COMMIT}.tar.gz
-		-> ${P}/lib/xpp.tar.gz
+		-> ${S}/lib/xpp.tar.gz
 	https://github.com/mihirlad55/dwmipcpp/archive/${DWMIPCPP_COMMIT}.tar.gz
-		-> ${P}/lib/dwmipcpp.tar.gz
+		-> ${S}/lib/dwmipcpp.tar.gz
 	i3wm? (
 		https://github.com/polybar/i3ipcpp/archive/${I3IPCPP_COMMIT}.tar.gz
-			-> ${P}/lib/i3ipcpp.tar.gz
+			-> ${S}/lib/i3ipcpp.tar.gz
 	)
 "
 S=${WORKDIR}/polybar-dwm-${EGIT_COMMIT}
