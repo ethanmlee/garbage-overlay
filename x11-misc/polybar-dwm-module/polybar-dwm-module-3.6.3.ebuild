@@ -63,7 +63,7 @@ src_prepare() {
 	rmdir lib/dwmipcpp || die
 	mv "${WORKDIR}/dwmipcpp-${DWMIPCPP_COMMIT}" lib/dwmipcpp || die
 	if use i3wm; then
-		rmdir lib/xpp || die
+		rmdir lib/i3ipcpp || die
 		mv "${WORKDIR}/i3ipcpp-${I3IPCPP_COMMIT}" lib/i3ipcpp || die
 	fi
 
