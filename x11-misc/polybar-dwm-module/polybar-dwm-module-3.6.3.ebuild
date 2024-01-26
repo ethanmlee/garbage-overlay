@@ -67,6 +67,8 @@ src_prepare() {
 		mv "${WORKDIR}/i3ipcpp-${I3IPCPP_COMMIT}" lib/i3ipcpp || die
 	fi
 
+	cmake_src_prepare
+
 	default
 }
 
