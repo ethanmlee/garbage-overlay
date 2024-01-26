@@ -13,7 +13,7 @@ DWMIPCPP_COMMIT="6b6947fd63845c8239f0a895be695bf206eaae6d"
 I3IPCPP_COMMIT="cb008b30fc5f3febfe467884cb0211ee3c16386b"
 SRC_URI="
 	https://github.com/pgrondek/polybar-dwm/archive/${EGIT_COMMIT}.tar.gz
-		-> ${PN}.tar.gz
+		-> ${P}.tar.gz
 	https://github.com/polybar/xpp/archive/${XPP_COMMIT}.tar.gz
 		-> xpp-${XPP_COMMIT}.tar.gz
 	https://github.com/mihirlad55/dwmipcpp/archive/${DWMIPCPP_COMMIT}.tar.gz
@@ -22,7 +22,7 @@ SRC_URI="
 		https://github.com/polybar/i3ipcpp/archive/${I3IPCPP_COMMIT}.tar.gz
 			-> i3ipcpp-${I3IPCPP_COMMIT}.tar.gz )
 "
-S=${WORKDIR}/${PN}-${EGIT_COMMIT}
+S=${WORKDIR}/polybar-dwm-${EGIT_COMMIT}
 
 LICENSE="MIT"
 SLOT="0"
