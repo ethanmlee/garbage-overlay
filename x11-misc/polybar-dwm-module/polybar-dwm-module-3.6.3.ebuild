@@ -28,7 +28,7 @@ LICENSE="MIT"
 SLOT="0"
 IUSE="i3wm alsa curl doc ipc mpd network pulseaudio"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 
 DEPEND="
 	${PYTHON_DEPS}

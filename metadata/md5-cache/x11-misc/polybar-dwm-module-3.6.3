@@ -6,11 +6,11 @@ EAPI=8
 HOMEPAGE=https://github.com/pgrondek/polybar-dwm/tree/master
 INHERIT=cmake python-single-r1
 IUSE=i3wm alsa curl doc ipc mpd network pulseaudio python_single_target_python3_10 python_single_target_python3_11 python_single_target_python3_12
-KEYWORDS=~amd64
+KEYWORDS=amd64
 LICENSE=MIT
 RDEPEND=python_single_target_python3_10? ( dev-lang/python:3.10 ) python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_10? ( x11-base/xcb-proto[python_targets_python3_10(-)] ) python_single_target_python3_11? ( x11-base/xcb-proto[python_targets_python3_11(-)] ) python_single_target_python3_12? ( x11-base/xcb-proto[python_targets_python3_12(-)] ) x11-libs/cairo[X,xcb(+)] x11-libs/xcb-util-image x11-libs/xcb-util-wm x11-libs/xcb-util-xrm x11-libs/xcb-util-cursor alsa? ( media-libs/alsa-lib ) pulseaudio? ( media-libs/libpulse ) mpd? ( media-libs/libmpdclient ) doc? ( dev-python/sphinx ) i3wm? ( dev-libs/jsoncpp:= x11-wm/i3 ) network? ( dev-libs/libnl:3 ) dev-libs/jsoncpp media-libs/fontconfig media-libs/freetype curl? ( net-misc/curl ) dev-libs/libuv:= x11-libs/libxcb:= x11-libs/xcb-util
 REQUIRED_USE=^^ ( python_single_target_python3_10 python_single_target_python3_11 python_single_target_python3_12 )
 SLOT=0
 SRC_URI=https://github.com/pgrondek/polybar-dwm/archive/a325d7e0656c7de1d2af0437785e8d433b23d3fc.tar.gz -> polybar-dwm-module-3.6.3.tar.gz https://github.com/polybar/xpp/archive/044e69d05db7f89339bda1ccd1efe0263b01c8f6.tar.gz -> xpp-044e69d05db7f89339bda1ccd1efe0263b01c8f6.tar.gz https://github.com/mihirlad55/dwmipcpp/archive/6b6947fd63845c8239f0a895be695bf206eaae6d.tar.gz -> dwmipcpp-6b6947fd63845c8239f0a895be695bf206eaae6d.tar.gz i3wm? ( https://github.com/polybar/i3ipcpp/archive/cb008b30fc5f3febfe467884cb0211ee3c16386b.tar.gz -> i3ipcpp-cb008b30fc5f3febfe467884cb0211ee3c16386b.tar.gz )
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	c7c9a62d6232cac66d4ea32d575c3e7c	python-utils-r1	042f4cc53680245bf99a84669b94155a	python-single-r1	75118e916668a74c660a13b0ecb22562
-_md5_=54eddc0cf61e7f45be6a52ce301d045f
+_md5_=ac85beb5e256b94ed3f615dd6e8662f1
