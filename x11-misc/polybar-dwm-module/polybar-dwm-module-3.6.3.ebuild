@@ -66,6 +66,8 @@ src_prepare() {
 		rmdir lib/xpp || die
 		mv "${WORKDIR}/i3ipcpp-${I3IPCPP_COMMIT}" lib/i3ipcpp || die
 	fi
+
+	default
 }
 
 src_configure() {
