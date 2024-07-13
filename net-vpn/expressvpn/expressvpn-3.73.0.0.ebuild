@@ -15,13 +15,18 @@ IUSE=""
 DEPEND="app-arch/xz-utils"
 RDEPEND="net-misc/curl"
 
+S="${WORKDIR}"
+
+src_unpack() {
+    unpack ${A}
+}
+
 src_install() {
-    cp -r "${WORKDIR}"/etc "${D}"/etc
-    cp -r "${WORKDIR}"/usr "${D}"/usr
+    cp -r "${S}"/etc "${D}"/etc
+    cp -r "${S}"/usr "${D}"/usr
 }
 
 pkg_postinst() {
     elog "ExpressVPN has been installed. Please follow the instructions"
     elog "on the ExpressVPN website to configure and use the client."
 }
-
