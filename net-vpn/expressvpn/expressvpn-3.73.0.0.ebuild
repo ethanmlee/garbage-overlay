@@ -15,10 +15,6 @@ IUSE=""
 DEPEND="app-arch/xz-utils"
 RDEPEND="net-misc/curl"
 
-src_unpack() {
-    unpack ${A}
-}
-
 src_install() {
     cp -r "${WORKDIR}"/etc "${D}"/etc
     cp -r "${WORKDIR}"/usr "${D}"/usr
