@@ -85,7 +85,7 @@ all_ruby_prepare() {
 		-e '/ruby_dep/ s:^#*:#:' \
 		-i ${PN}.gemspec || die
 
-	sed -e "s/@VAGRANT_VERSION@/${PV}/g" "${FILESDIR}/${PN}.in" > "${PN}" || die
+	#sed -e "s/@VAGRANT_VERSION@/${PV}/g" "${FILESDIR}/${PN}.in" > "${PN}" || die
 
 	sed -i -e 's/format documentation/format progress/' tasks/test.rake || die
 
