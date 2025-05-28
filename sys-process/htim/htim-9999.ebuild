@@ -1,6 +1,6 @@
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 
 # We avoid xdg.eclass here because it'll pull in glib, desktop utils on
 # htop which is often used on headless machines. bug #787470
