@@ -1,7 +1,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=poetry
-PYTHON_COMPAT=( python3_{9..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 inherit git-r3 distutils-r1
 
 DESCRIPTION="A fork of epr, a CLI Ebook Reader"

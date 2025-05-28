@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst unpack
+DEPEND=app-arch/xz-utils
+DESCRIPTION=ExpressVPN Client
+EAPI=7
+HOMEPAGE=https://www.expressvpn.com
+KEYWORDS=~amd64
+LICENSE=custom
+RDEPEND=net-misc/curl
+SLOT=0
+SRC_URI=https://www.expressvpn.works/clients/linux/expressvpn-3.73.0.0-1-x86_64.pkg.tar.xz
+_md5_=9d823c4f2b4c0910853089accaf8f23c

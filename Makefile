@@ -1,0 +1,2 @@
+manifest:
+	pkgdev manifest
