@@ -86,7 +86,9 @@ src_configure() {
 		# Bug 767949
 		-DENABLE_CCACHE="OFF"
 		-DCMAKE_INSTALL_SYSCONFDIR="${EPREFIX}/etc/"
+		# force-link freetype
+        -DCMAKE_EXE_LINKER_FLAGS="-lfreetype"
 	)
 
-	cmake_src_configure
+	cmake_src_configure "${mycmakeargs[@]}"
 }
