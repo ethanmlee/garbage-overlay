@@ -132,7 +132,7 @@ src_unpack() {
 
 src_prepare() {
 	default
-	rm lib/UIDialogLibWebKit.so || die
+	rm lib/UIDialogLibWebKit3.so || die
 
 	cp nls/en/module.ini . || die
 	if use usb; then
