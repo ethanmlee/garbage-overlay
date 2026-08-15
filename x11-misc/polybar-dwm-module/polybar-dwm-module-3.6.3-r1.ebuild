@@ -88,6 +88,7 @@ src_configure() {
 		-DCMAKE_INSTALL_SYSCONFDIR="${EPREFIX}/etc/"
 		# force-link freetype
         -DCMAKE_EXE_LINKER_FLAGS="-lfreetype"
+		-DCMAKE_CXX_FLAGS="-include cstdint"
 	)
 
 	cmake_src_configure "${mycmakeargs[@]}"
